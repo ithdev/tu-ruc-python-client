@@ -1,0 +1,1 @@
+from tu_ruc_python_client.client import get_contribuyente_by_search
