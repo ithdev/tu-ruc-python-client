@@ -1,0 +1,18 @@
+[project]
+name = "tu-ruc-python-client"
+version = "0.1.0"
+authors = [
+  { name="Sebastian Alvarez", email="ca.sebastianlv@gmail.com" },
+]
+description = "Cliente Python para la API de TURUC Paraguay "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ithdev/tu-ruc-python-client"
+Issues = "https://github.com/ithdev/tu-ruc-python-client/issues"
