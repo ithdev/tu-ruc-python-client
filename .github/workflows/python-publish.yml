@@ -2,8 +2,9 @@ name: Upload Python Package
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - '*'
+
 
 jobs:
   deploy:
@@ -38,4 +39,4 @@ jobs:
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
         user: __token__
-        password: ${{ github.token }}
+        password: ${{ secrets.PYPI_API_TOKEN }}
