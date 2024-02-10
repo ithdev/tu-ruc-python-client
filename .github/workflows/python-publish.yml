@@ -12,10 +12,7 @@ on:
   push:
     tags:
       - '*'
-
-permissions:
-  contents: read
-
+      
 jobs:
   deploy:
 
