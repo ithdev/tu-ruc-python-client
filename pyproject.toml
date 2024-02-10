@@ -1,6 +1,6 @@
 [project]
 name = "tu-ruc-python-client"
-version = "0.1.0"
+version = "0.5.0"
 authors = [
   { name="Sebastian Alvarez", email="ca.sebastianlv@gmail.com" },
 ]
