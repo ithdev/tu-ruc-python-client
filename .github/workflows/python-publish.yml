@@ -2,8 +2,8 @@ name: Upload Python Package
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -16,6 +16,15 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3.x'
+
+    - name: Check if tag exists
+      run: |
+        if [[ ${{ github.ref }} == 'refs/tags/'* ]]; then
+          echo "Tag push detected, running deployment."
+        else
+          echo "Not a tag push, skipping deployment."
+          exit 1
+        fi
 
     - name: Install dependencies
       run: |
