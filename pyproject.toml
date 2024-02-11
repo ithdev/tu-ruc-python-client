@@ -1,8 +1,9 @@
 [project]
 name = "tu_ruc_python_client"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Sebastian Alvarez", email="ca.sebastianlv@gmail.com" },
+  { name="Esteban Fernandez", email="estebangfernandeza@gmail.com" },
 ]
 description = "Cliente Python para la API de TURUC Paraguay "
 readme = "README.md"
