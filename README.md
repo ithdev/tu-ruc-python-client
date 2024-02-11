@@ -9,7 +9,7 @@ Esta biblioteca proporciona funciones para realizar consultas a una API de contr
 
 Instala la biblioteca a través de pip:
 ```bash
-pip install tu-ruc-python-client
+pip install tu_ruc_python_client
 ```
 
 Importa las funciones que necesitas en tu código:
