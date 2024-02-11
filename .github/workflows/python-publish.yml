@@ -6,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  build:
+  build and publish:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -25,18 +25,8 @@ jobs:
     - name: Build package
       run: python -m build
 
-  publish:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.x'
-
     - name: Install twine
       run: |
-        python -m pip install --upgrade pip
         python -m pip install --upgrade twine
 
     - name: Publish package
