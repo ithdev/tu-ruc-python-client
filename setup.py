@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tu-ruc-python-client',
-    version='0.6.0',
+    version='0.0.1',
     packages=find_packages(),
     install_requires=[
         'requests'
