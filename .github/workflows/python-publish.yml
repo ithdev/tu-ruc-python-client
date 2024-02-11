@@ -34,4 +34,4 @@ jobs:
         python3 -m twine upload --repository testpypi dist/*
       env:
         TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.pypi.token }}
+        TWINE_PASSWORD: ${{ secrets.pypi.TOKEN }}
