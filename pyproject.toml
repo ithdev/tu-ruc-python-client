@@ -1,19 +1,43 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "tu_ruc_python_client"
-version = "0.0.3"
+version = "0.1.0"
 authors = [
   { name="Sebastian Alvarez", email="ca.sebastianlv@gmail.com" },
   { name="Esteban Fernandez", email="estebangfernandeza@gmail.com" },
 ]
 description = "Cliente Python para la API de TURUC Paraguay "
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.28.1,<1"]
+license = "MIT"
+license-files = ["LICENSE"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
     "Operating System :: OS Independent",
 ]
 
 [project.urls]
 Homepage = "https://github.com/ithdev/tu-ruc-python-client"
 Issues = "https://github.com/ithdev/tu-ruc-python-client/issues"
+
+[dependency-groups]
+dev = ["ruff==0.17.0", "twine==7.0.0"]
+
+[tool.uv]
+required-version = "==0.13.0"
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
