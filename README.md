@@ -147,8 +147,8 @@ herramientas no forman parte de las dependencias de ejecución del cliente.
 Los consumidores pueden seguir instalando el SDK con pip y resolver el rango
 `httpx>=0.28.1,<1` sin utilizar nuestro lockfile.
 
-Ruff 0.17.0 comprueba y formatea todo el código Python, incluidas las pruebas
-y los benchmarks. La configuración usa Python 3.11 como mínimo y activa
+Ruff 0.17.0 comprueba y formatea todo el código Python, incluidas las pruebas.
+La configuración usa Python 3.11 como mínimo y activa
 `E4`, `E7`, `E9` y `F` para errores básicos, `I` para ordenar imports, `UP`
 para sintaxis compatible con ese mínimo y `B` para errores comunes.
 El formato mantiene los valores predeterminados de Ruff; no se excluyen reglas
@@ -164,8 +164,6 @@ Revisa los cambios y ejecuta las comprobaciones y pruebas antes de enviarlos.
 Las pruebas comprueban el contrato HTTP de las funciones y los clientes.
 Un servidor local permite verificar reutilización y cierre de conexiones,
 además de concurrencia asíncrona. No consultan la API de producción.
-La [comparación de rendimiento](benchmarks/README.md) documenta una medición
-reproducible de Requests y HTTPX con el mismo servidor y carga.
 
 Para construir y comprobar los paquetes con las herramientas fijadas:
 
