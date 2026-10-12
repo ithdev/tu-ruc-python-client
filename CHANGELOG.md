@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 — Sin publicar
+## 0.1.0 — 2026-10-12
 
 - El mínimo pasa de Python 3.8 a Python 3.11; la CI verifica CPython 3.11–3.15.
 - HTTPX (`httpx>=0.28.1,<1`) reemplaza a Requests como dependencia de ejecución.
